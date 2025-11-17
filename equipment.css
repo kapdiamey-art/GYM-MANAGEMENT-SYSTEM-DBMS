@@ -1,0 +1,76 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0b0c10, #1f2833);
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+    background: url('p2.jpg') no-repeat center center/cover;
+}
+
+header {
+  text-align: center;
+  background: teal;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+form {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: teal;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #008080;
+}
+
+.table-container {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+}
+
+.delete-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}

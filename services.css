@@ -1,0 +1,148 @@
+
+body {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('member.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.85);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+.logo span {
+  color: #00e6b8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover, .nav-links .active {
+  color: #00e6b8;
+}
+
+.btn-outline {
+  border: 1px solid #00e6b8;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #00e6b8;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-outline:hover {
+  background: #00e6b8;
+  color: #000;
+}
+
+
+.membership-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership-section h2 {
+  color: #00e6b8;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.plan-card {
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 230, 184, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 230, 184, 0.4);
+}
+
+.plan-card h3 {
+  color: #00e6b8;
+  margin-bottom: 10px;
+}
+
+.plan-card .price {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.plan-card ul li {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+
+.highlight {
+  border: 2px solid #00e6b8;
+  transform: scale(1.05);
+}
+
+
+.btn {
+  background-color: #00e6b8;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #00bfa1;
+}
+
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 0;
+  margin-top: 40px;
+  color: #ccc;
+}

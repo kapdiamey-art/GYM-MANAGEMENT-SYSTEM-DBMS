@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Trainers</title>
+  <link rel="stylesheet" href="view_trainers.css">
+</head>
+<body>
+  <div class="container">
+    <h2>All Trainers</h2>
+    <div id="trainerTable"></div>
+    <button onclick="goBack()">Go Back</button>
+  </div>
+
+  <script>
+    
+    fetch('fetch_trainers.php')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('trainerTable').innerHTML = data;
+      });
+
+    function goBack() {
+      window.location.href = "membership.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Gym | Lifestyle Fitness</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Lifestyle <span>Fitness</span></div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html" class="protected">Memberships </a></li>
+        <li><a href="aboutus.html" class="protected">About Us</a></li>
+        <li><a href="membership.html" class="protected">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="adminlogin.html" class="btn-outline" id="adminBtn">Admin Login</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Build Your<br><span>Dream Physique</span></h1>
+      <h2 class="highlight">Achieve Your Goals</h2>
+      <p>Unleash your full potential and transform your body. Build strength, confidence, and the best version of yourself.</p>
+      <a href="adminlogin.html" class="btn-filled">Join Us</a>
+    </div>
+  </section>
+
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="p1.jpg" alt="Personal Training">
+        <h3>Personal Training</h3>
+        <p>One-on-one sessions with certified trainers to maximize your results.</p>
+      </div>
+      <div class="card">
+        <img src="p2.jpg" alt="Group Classes">
+        <h3>Group Classes</h3>
+        <p>High-energy group workouts like Zumba, HIIT, Yoga, and more.</p>
+      </div>
+      <div class="card">
+        <img src="p3.jpg" alt="Nutrition Guidance">
+        <h3>Nutrition Guidance</h3>
+        <p>Customized meal plans to fuel your body and achieve fitness goals.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="trainers">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainer-cards">
+      <div class="trainer-card">
+        <img src="t1.jpg" alt="Trainer John">
+        <h3>John Doe</h3>
+        <p>Strength & Conditioning Specialist</p>
+      </div>
+      <div class="trainer-card">
+        <img src="t2.jpg" alt="Trainer Sarah">
+        <h3>Sarah Lee</h3>
+        <p>Yoga & Flexibility Coach</p>
+      </div>
+      <div class="trainer-card">
+        <img src="t3.jpg" alt="Trainer Mike">
+        <h3>Mike Smith</h3>
+        <p>HIIT & Functional Training Expert</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>©️ 2025 Lifestyle Fitness. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const adminBtn = document.getElementById('adminBtn');
+    const protectedLinks = document.querySelectorAll('.protected');
+
+  
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+    
+    if (isLoggedIn) {
+      adminBtn.textContent = 'Logout';
+      adminBtn.href = 'adminlogin.html';
+      adminBtn.addEventListener('click', () => {
+        localStorage.removeItem('isLoggedIn');
+        alert('You have logged out successfully.');
+        location.reload();
+      });
+    } else {
+      adminBtn.textContent = 'Admin Login';
+      adminBtn.href = 'adminlogin.html';
+    }
+
+ 
+    protectedLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        if (!isLoggedIn) {
+          e.preventDefault();
+          alert('Please log in to access this page.');
+          window.location.href = 'adminlogin.html';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

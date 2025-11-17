@@ -1,0 +1,46 @@
+body {
+  background: url("gym.jpg") no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

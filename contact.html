@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Lifestyle Fitness</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo">Lifestyle <span>Fitness</span></div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="membership.html">Memberships</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> info@lifestylefitness.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+      </div>
+
+      <form action="submit_feedback.php" method="POST">
+        <label for="name">MEM_ID</label>
+        <input type="text" id="mem_id" name="mem_id" placeholder="Enter your member id" required>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>©️ 2025 Lifestyle Fitness. All rights reserved.</p>
+  </footer>
+</body>
+</html>

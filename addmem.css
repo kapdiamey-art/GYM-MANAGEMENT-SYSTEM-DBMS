@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('p2.jpg') no-repeat center center/cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 60, 50, 0.9);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #00e6b8;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+
+.form-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 180, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-card h2 {
+  text-align: center;
+  color: #00e6b8;
+  margin-bottom: 25px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ddd;
+  font-size: 14px;
+  font-weight: 500;
+}
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid rgba(0, 255, 180, 0.4);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+select {
+  background-image: linear-gradient(45deg, transparent 50%, #00ffcc 50%), 
+                    linear-gradient(135deg, #00ffcc 50%, transparent 50%);
+  background-position: calc(100% - 15px) center, calc(100% - 10px) center;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #002b25;
+  color: #fff;
+}
+
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #00ffcc;
+  box-shadow: 0 0 8px rgba(0, 255, 180, 0.5);
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007c66, #00b38f);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00997b, #00e6b8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 180, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  font-size: 14px;
+  border-top: 1px solid rgba(0, 255, 180, 0.2);
+  letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 30px 25px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
